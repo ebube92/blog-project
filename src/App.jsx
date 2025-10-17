@@ -1,7 +1,8 @@
-import './App.css'
+import "./App.css";
+import BlogHome from "./pages/blogHome.jsx";
 
 function App() {
-  return
+  return <BlogHome />;
 }
 
-export default App
+export default App;
