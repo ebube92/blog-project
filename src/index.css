@@ -4,3 +4,7 @@
   --font-family: 'Outfit', sans-serif;
   --font-logo: 'Playwrite DE SAS', serif;
 }
+
+.filter-button {
+  @apply border-2 border-gray-900 text-gray-900 px-5 py-2 rounded-md hover:bg-gray-700 hover:text-white active:bg-gray-700 active:text-white transition cursor-pointer;
+}

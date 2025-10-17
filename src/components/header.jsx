@@ -23,7 +23,7 @@ export default function Header() {
         </nav>
       </header>
       <div className="h-2 bg-yellow-400"></div>
-      <p className="font-family p-4 text-center text-xl border-b border-gray-400">Thoughts on code, design and growth.</p>
+      <p className="font-family bg-gray-50 p-4 text-center text-xl border-b border-gray-400">Thoughts on code, design and growth.</p>
     </div>
   );
 }
