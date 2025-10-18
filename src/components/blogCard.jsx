@@ -1,4 +1,4 @@
-export default function BlogCard() {
+export default function BlogCard({ title, description, image, category, date }) {
   return (
     <div className="bg-white p-5 rounded-lg shadow-md mb-6 font-family items-stretch">
       <img src={image} alt={title} className="rounded-lg object-cover" />
@@ -7,7 +7,7 @@ export default function BlogCard() {
         <h2 className="text-2xl mb-3">{title}</h2>
         <p className="text-lg">{description}</p>
         <span className="text-md text-gray-700 font-semibold">
-          {category} . {date}
+          {category} • {date}
         </span>
         <a href="#">Read More</a>
       </div>
