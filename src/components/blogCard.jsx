@@ -6,7 +6,7 @@ export default function BlogCard({
   date,
 }) {
   return (
-    <div className="flex flex-col gap-5 bg-white p-5 rounded-lg shadow-md mb-6 font-family items-stretch">
+    <div className="flex flex-col gap-5 bg-white p-5 rounded-lg shadow-md mb-6 font-family items-stretch hover:shadow-xl transition-shadow duration-300">
       <img src={image} alt={title} className="rounded-lg object-cover" />
 
       <div className="flex flex-col gap-2 flex-1">

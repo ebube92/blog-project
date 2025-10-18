@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <div>
-      <header className="bg-gray-900 p-4 flex items-center justify-around">
+      <header className="bg-gray-900 py-4 px-8 flex items-center justify-between">
         <h1 className="font-logo text-2xl font-semibold text-white">
           [Ebube Writes]
         </h1>
