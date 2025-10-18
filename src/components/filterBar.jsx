@@ -1,12 +1,19 @@
-
-export default function FilterBar() {
+export default function FilterBar({ selectedCategory, setSelectedCategory }) {
+  const categories = ["All", "Tech", "Travel", "Food"];
 
   return (
     <div className="flex items-center justify-center gap-3 p-4 bg-gray-50 font-family">
-      <button className="filter-button">All</button>
-      <button className="filter-button">Tech</button>
-      <button className="filter-button">Travel</button>
-      <button className="filter-button">Food</button>
+      {categories.map((category) => (
+        <button
+          key={category}
+          className={`filter-button ${
+            selectedCategory === category ? "bg-gray-900 text-white" : ""
+          }`}
+          onClick={() => setSelectedCategory(category)}
+        >
+          {category}
+        </button>
+      ))}
     </div>
   );
 }
