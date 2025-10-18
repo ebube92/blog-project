@@ -3,6 +3,7 @@ import posts from "../data/posts.js";
 import Header from "../components/header.jsx";
 import FilterBar from "../components/filterBar.jsx";
 import PostsGrid from "../components/postsGrid.jsx";
+import Footer from "../components/footer.jsx";
 
 export default function BlogHome() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -20,6 +21,7 @@ export default function BlogHome() {
         setSelectedCategory={setSelectedCategory}
       />
       <PostsGrid posts={filteredPosts} />
+      <Footer />
     </div>
   );
 }
